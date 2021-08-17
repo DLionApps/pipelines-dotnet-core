@@ -17,6 +17,6 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '2ad16fdd-fda4-4386-ab68-cd532a56cedf'
+    azureSubscription: 'Azure subscription 1'
     appName: 'ServiceAdvisorAPI'
     package: $(System.DefaultWorkingDirectory)/**/*.zip
