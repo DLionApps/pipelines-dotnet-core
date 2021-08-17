@@ -20,3 +20,4 @@ steps:
     azureSubscription: 'AzureServiceConOne'
     appName: 'ServiceAdvisorAPI'
     package: $(System.DefaultWorkingDirectory)/**/*.zip
+- task: PublishBuildArtifacts@1
