@@ -27,6 +27,6 @@ steps:
   inputs:
     azureSubscription: 'AzureServiceConOne'
     appName: 'ServiceAdvisorAPI'
-    package: $(System.DefaultWorkingDirectory)/bin/WebApp
+    package: $(System.DefaultWorkingDirectory)
     
 - task: PublishBuildArtifacts@1
