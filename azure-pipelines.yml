@@ -15,6 +15,9 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+
+- publish: $(System.DefaultWorkingDirectory)
+  artifact: drop
   
   # download the artifact drop from the previous job
 - task: DownloadBuildArtifacts@0
